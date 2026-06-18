@@ -1,0 +1,159 @@
+.wish-page {
+    padding: 120px 20px 40px;
+    background: #f6f7fb;
+    min-height: 100vh;
+}
+
+.wish-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wish-title h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.wish-title p {
+    color: #777;
+    margin-top: 6px;
+}
+
+.wish-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.pcard-item {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    overflow: hidden;
+    position: relative;
+    transition: .2s;
+}
+
+.pcard-item:hover {
+    transform: translateY(-3px);
+}
+
+.pcard-item__img {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f4f6;
+}
+
+.pcard-item__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pcard-item__body {
+    padding: 12px;
+}
+
+.pcard-item__name {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.pprice {
+    font-weight: 700;
+}
+
+.wish-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.btn {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-primary {
+    background: #2f6bff;
+    color: #fff;
+}
+
+.btn-danger {
+    background: #ff4d4d;
+    color: #fff;
+}
+
+/* empty */
+.wish-empty {
+    text-align: center;
+    padding: 60px;
+    background: #fff;
+    border-radius: 16px;
+}
+
+@media (max-width: 1000px) {
+    .wish-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .wish-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.pcard-item__img {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    background: #f6f7f9;
+    border-radius: 14px 14px 0 0;
+}
+
+.pcard-item__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.pcard-item__img .ei {
+    font-size: 42px;
+}
+
+.wish-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+.wish-btn:hover {
+    transform: scale(1.1);
+}
+
+.wish-btn.active {
+    background: #ffebee;
+}
